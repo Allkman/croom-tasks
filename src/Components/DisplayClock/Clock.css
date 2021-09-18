@@ -1,0 +1,19 @@
+.Time {
+    height: 20px;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 1px;
+    font-family: courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    }
+    .pagediv{
+        height: 300px;
+        width: 100vh;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+        z-index: 0;
+    }

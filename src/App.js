@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import GoogleMap from './Components/GMapAPI/GoogleMap';
+import CurrentTime from './Components/DisplayClock/CurrentTime.js';
+import Calculator from './Components/Temperature/Calculator.js';
+import TemporaryDrawer from './Components/TemporaryDrawer';
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <TemporaryDrawer/>
+      <Switch>
+          <Route exact path="/">
+        <GoogleMap />
+            </Route>
+          <Route exact path="/CurrentTime">
+              <CurrentTime />
+            </Route>
+          <Route exact path="/Calculator">
+            <Calculator/>
+          </Route>
+          </Switch>
+      </Router>
     </div>
+    </>
   );
 }
 
