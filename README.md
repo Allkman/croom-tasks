@@ -1,6 +1,7 @@
 # Homework tasks
 
 Tasks devided into separate folders.
+Additionally added LEFT side drawer maniu.
 1. Display of the current time in the browser window.
  ![clock](/clock.png)
 2. Temperature converter (C - F / F - C)
